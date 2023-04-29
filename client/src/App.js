@@ -3,6 +3,7 @@ import Todo from './components/Todo';
 import AddTodo from './components/AddTodo';
 import TodoHead from './components/TodoHead';
 import './styles/App.css'
+import styled from 'styled-components'
 
 // import './App.css';
 
@@ -45,6 +46,8 @@ function App() {
     setTodoItems(newTodoItems);
   };
 
+
+
   return (
       <div className="App">
 
@@ -53,12 +56,38 @@ function App() {
         {/* todo 추가 input */}
         <AddTodo addItem={addItem} />
 
+
+
         {/* todo 목록 보이기 */}
-        {todoItems.map((item) => {
-          return <Todo key={item.id} item={item} deleteItem={deleteItem} />;
-        })}
+        {todoItems.length > 0 ? (
+            todoItems.map((item) => {
+              return <Todo key={item.id} item={item} deleteItem={deleteItem} />;
+            })
+        ) : (
+            <Todoplus className="empty-todos">✅ Todo 추가하쎄옹 ✅</Todoplus>
+        )}
+
+        {/* 미션: 현재 투두 목록 개수 보이기 */}
+
+        <Count>Totle : Todo List ({todoItems.length}) </Count>
+
+
+
+
       </div>
   );
 }
 
 export default App;
+
+const Count = styled.div`
+  font-size: 1.8rem;
+  color: #68a67d;
+  margin-top: 2rem;
+`;
+
+const Todoplus = styled.p`
+  font-size: 1.8rem;
+  color: #24613b;
+  text-align: center;
+`;

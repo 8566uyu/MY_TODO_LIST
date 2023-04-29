@@ -13,7 +13,11 @@ const AddTodo = ({ addItem }) => {
   });
 
   const onButtonClick = () => {
+    // 빈값은 추가 안되게
+    if (todoItem.title === '') return;
+    //1. props addItem 함수
     addItem(todoItem);
+    // 2. input 초기화
     setTodoItem({ title: '' });
   }
 

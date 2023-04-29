@@ -98,7 +98,7 @@ const Todo = ({ item, deleteItem }) => {
             id={`todo${item.id}`}
             name={`todo${item.id}`}
             value={`todo${item.id}`}
-            defaultChecked={item.done}
+            // defaultChecked={item.done}
             onChange={checkboxEventHandler}
 
         />
