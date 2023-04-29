@@ -2,7 +2,6 @@ import { useState } from 'react';
 import Todo from './components/Todo';
 import AddTodo from './components/AddTodo';
 import TodoHead from './components/TodoHead';
-import './styles/App.css'
 
 // import './App.css';
 

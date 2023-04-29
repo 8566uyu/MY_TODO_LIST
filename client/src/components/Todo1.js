@@ -5,11 +5,11 @@ import 'focus-visible';
 
 const Delete = styled.div`
   display: flex;
-  margin-left: 2vw;
+  margin-left: 3vw;
   align-items: center;
   justify-content: center;
   color: #dee2e6;
-  font-size: 30px;
+  font-size: 24px;
   cursor: pointer;
   &:hover {
     color: #ff6b6b;
@@ -20,7 +20,6 @@ const Delete = styled.div`
 const TodoItemBlock = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
   padding-top: 12px;
   padding-bottom: 12px;
   &:hover {
@@ -31,10 +30,10 @@ const TodoItemBlock = styled.div`
 `;
 
 const CheckBox = styled.input`
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 1rem;
+  height: 1rem;
   border-radius: 100%;
-  //border: 1px solid #ced4da;
+  border: 1px solid #ced4da;
   //font-size: 24px;
   display: flex;
   align-items: center;
@@ -42,7 +41,6 @@ const CheckBox = styled.input`
   margin-right: 2rem;
  
 `;
-
 
 
 const Todo = ({ item, deleteItem }) => {

@@ -1,0 +1,28 @@
+:root {
+  font-size: 62.5%;
+}
+#root {
+  display: flex;
+  background-color: #F5F5DC;
+  width: 50vw;
+  height: 100vh;
+  justify-content: center;
+}
+
+input[type='checkbox'] {
+  accent-color: #8FBF9F;
+  border-radius: 50%;
+  }
+
+input {
+background-color: transparent;
+border: none;
+border-bottom: 1px solid  #8FBF9F;
+  /*width: 36rem;*/
+  width: 20rem;
+  
+  height: 4rem;
+  font-weight: bold;
+  color: #24613b;
+  font-size: 1.8rem;
+  }
