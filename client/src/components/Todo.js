@@ -45,7 +45,7 @@ const CheckBox = styled.input`
 
 
 
-const Todo = ({ item, deleteItem }) => {
+const Todo = ({ item, deleteItem, updateItem }) => {
   console.log(item); // {done: false, id: 1, title: "저녁먹기"}
   const [todoItem, setTodoItem] = useState(item);
   const [readOnly, setReadOnly] = useState(true);
@@ -63,6 +63,7 @@ const Todo = ({ item, deleteItem }) => {
   const enterKeyEventHandler = (e) => {
     if (e.key === 'Enter') {
     setReadOnly(true); //
+      updateItem(todoItem); // 수정 1- text input 에서 enter 누르면 수정완료
     }
   };
 
@@ -77,16 +78,23 @@ const Todo = ({ item, deleteItem }) => {
   };
 
   const checkboxEventHandler = (e) => {
-    todoItem.done = !todoItem.done;
-    setTodoItem(todoItem);
-
-    const { checked, ...rest } = todoItem;
-
-    setTodoItem({
+    // todoItem.done = !todoItem.done;
+    // setTodoItem(todoItem);
+    //
+    // const { checked, ...rest } = todoItem;
+    //
+    // setTodoItem({
+    //   done: e.target.checked,
+    //   ...rest,
+    //
+    // });
+    const { done , ...rest } = todoItem;
+    const xxx = {
       done: e.target.checked,
       ...rest,
-
-    });
+    }
+    setTodoItem(xxx);
+    updateItem(xxx); // 수정 2 - checkbox input 에서 check 여부 변경시 수정
   }
 
 
