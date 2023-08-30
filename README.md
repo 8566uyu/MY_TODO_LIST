@@ -1,6 +1,6 @@
 ## MY_TODO_LIST
 
-![Uploading todo list.gif…]()
+![todo list](https://github.com/8566uyu/MY_TODO_LIST/assets/121207285/ddad262c-0952-4bae-b617-b797423b6d01)
 
 
 <BR>
