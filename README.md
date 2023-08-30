@@ -19,5 +19,20 @@
 
 
 ## 🪄 프로젝트 확인
-(((((((((깃주소 첨부 예정))))))))
 
+```
+https://github.com/8566uyu/MY_TODO_LIST.git
+```
+
+```
+< client >
+cd client
+npm install
+npm start
+```
+```
+< server >
+cd  server
+npm install
+npm start
+```
