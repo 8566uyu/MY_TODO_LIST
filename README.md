@@ -5,7 +5,7 @@
 <BR>
 
 ## 👍 서비스 소개
-## TODO LIST 
+## TODO LIST 웹서비스 구현
 <BR>
 
 ## ✨ 주요 기능
