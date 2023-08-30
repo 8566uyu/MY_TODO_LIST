@@ -2,12 +2,13 @@
 
 ![ezgif-4-548c4ccf3c](https://github.com/8566uyu/MY_TODO_LIST/assets/121207285/5e4a8016-6da0-4230-830e-3c96ed8cabfd)
 
+<BR>
+
 ## 👍 서비스 소개
 ## TODO LIST 
+<BR>
 
 ## ✨ 주요 기능
-1. <B>리스트 추가</B> -
-2. 리스트 수정 - \
-3. 리스트 삭제 -
-4. 오늘의 날짜 -
-5. 리스트 갯수 확인 - 
+<B> 1. 리스트 추가, 수정, 삭제 </B> - CRUD 사용, 목록 최근 추가 순으로 정렬됨
+<B> 2. 오늘의 날짜 </B> - toLocaleString 'ko-KR' 사
+<B> 3. 리스트 갯수 확인 </B>
